@@ -1,0 +1,16 @@
+.button {
+  display: block;
+  background-color: var(--clr-primary-5);
+  padding: 0.175rem 0.675rem;
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 0.675rem;
+  box-shadow: var(--neumorphism-5);
+  color: var(--clr-primary-9);
+}
+
+.button:hover,
+.button:active {
+  box-shadow: var(--neumorphism-inset-5);
+}
