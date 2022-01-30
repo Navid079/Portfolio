@@ -7,6 +7,7 @@ import Splitter from '../../components/UI/Splitter/Splitter';
 import Card from '../../components/UI/Card/Card';
 import Button from '../../components/UI/Buttons/Button';
 import Portfolio from '../../page-sections/Index/Portfolio';
+import Footer from '../../page-sections/Index/Footer';
 
 const Index = () => {
   return (
@@ -41,6 +42,8 @@ const Index = () => {
       </Biography>
       <Splitter />
       <Portfolio />
+      <Splitter />
+      <Footer />
     </div>
   );
 };
