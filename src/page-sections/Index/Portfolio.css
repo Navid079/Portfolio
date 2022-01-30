@@ -1,3 +1,23 @@
 .portfolio {
   display: flex;
+  background-color: var(--clr-primary-6);
+}
+
+.portfolio__card {
+  background-color: var(--clr-secondary-7);
+}
+
+.portfolio__card * {
+  color: var(--clr-primary-5);
+}
+
+.portfolio__button {
+  background-color: var(--clr-secondary-7);
+  box-shadow: var(--neumorphism-secondary-5);
+  color: var(--clr-primary-5);
+}
+
+.portfolio__button:hover,
+.portfolio__button:active {
+  box-shadow: var(--neumorphism-secondary-inset-5);
 }

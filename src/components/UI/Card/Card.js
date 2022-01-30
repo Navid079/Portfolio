@@ -26,19 +26,21 @@ const Card = ({ className, imageUrl, type, title, children, ...props }) => {
       break;
     case 'external':
       buttons = props.buttons.map(btn =>
-        cloneElement(btn, {className: btn.props.className + ' card__button'})
+        cloneElement(btn, { className: btn.props.className + ' card__button' })
       );
       break;
   }
 
   return (
-    <div className='card'>
+    <div className={`card ${className || ''}`}>
       <div className='card__image-container'>
         <img src={imageUrl} />
       </div>
       <div className='card__body'>
-        <h3 className='card__title'>{title}</h3>
-        <div className='card__text'>{children}</div>
+        <div className='card__description'>
+          <h3 className='card__title'>{title}</h3>
+          <div className='card__text'>{children}</div>
+        </div>
         <div className='card__buttons'>{buttons}</div>
       </div>
     </div>
