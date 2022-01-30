@@ -4,8 +4,6 @@ import React from 'react';
 import Hero from '../../page-sections/Index/Hero';
 import Biography from '../../page-sections/Index/Biography';
 import Splitter from '../../components/UI/Splitter/Splitter';
-import Card from '../../components/UI/Card/Card';
-import Button from '../../components/UI/Buttons/Button';
 import Portfolio from '../../page-sections/Index/Portfolio';
 import Footer from '../../page-sections/Index/Footer';
 

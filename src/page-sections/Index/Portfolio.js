@@ -20,6 +20,8 @@ const Portfolio = () => {
       case project3.current:
         console.log('three');
         break;
+      default:
+        break;
     }
   };
 
@@ -59,7 +61,7 @@ const Portfolio = () => {
         type='external'
         buttons={[seeMoreButton1]}
         imageUrl={require('../../images/project.jpg')}
-        >
+      >
         Project A is a project that is going to do something in some way to
         achieve some goal. This project is written by me with some technologies.
       </Card>
@@ -69,7 +71,7 @@ const Portfolio = () => {
         type='external'
         buttons={[seeMoreButton2]}
         imageUrl={require('../../images/project.jpg')}
-        >
+      >
         Project B is a project that is going to do something in some way to
         achieve some goal. This project is written by me with some technologies.
       </Card>
