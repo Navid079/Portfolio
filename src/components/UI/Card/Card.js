@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { cloneElement } from 'react';
 import Button from '../Buttons/Button';
 
 import './Card.css';
 
-const Card = ({ className, imageUrl, type, ...handlers }) => {
+const Card = ({ className, imageUrl, type, ...props }) => {
   let buttons = [];
 
   switch (type) {
@@ -12,8 +12,22 @@ const Card = ({ className, imageUrl, type, ...handlers }) => {
       buttons.push(<Button className='card__button'>Ok</Button>);
       break;
     case 'prompt':
-      buttons.push(<Button className='card__button card__button--accept'>Yes</Button>);
-      buttons.push(<Button className='card__button card__button--reject'>No</Button>);
+      buttons.push(
+        <Button className='card__button card__button--accept'>Yes</Button>
+      );
+      buttons.push(
+        <Button className='card__button card__button--reject'>No</Button>
+      );
+      break;
+    case 'custom':
+      for (const btn of props.buttons) {
+        buttons.push(<Button className='card__button'>{btn}</Button>);
+      }
+      break;
+    case 'external':
+      buttons = props.buttons.map(btn =>
+        cloneElement(btn, {className: btn.props.className + ' card__button'})
+      );
       break;
   }
 
