@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Navid079@github.io/Portfolio/static/css/main.b89cdb86.css",
+    "main.js": "/Navid079@github.io/Portfolio/static/js/main.5f6c8afa.js",
+    "static/media/school.jpg": "/Navid079@github.io/Portfolio/static/media/school.08d5777406fac6191524.jpg",
+    "static/media/project.jpg": "/Navid079@github.io/Portfolio/static/media/project.914909ef7f79485531ec.jpg",
+    "static/media/experience.jpg": "/Navid079@github.io/Portfolio/static/media/experience.29a67b8d0dc006c5ebd9.jpg",
+    "static/media/avatar.jpg": "/Navid079@github.io/Portfolio/static/media/avatar.c7c33ba17aee25c8861d.jpg",
+    "index.html": "/Navid079@github.io/Portfolio/index.html",
+    "main.b89cdb86.css.map": "/Navid079@github.io/Portfolio/static/css/main.b89cdb86.css.map",
+    "main.5f6c8afa.js.map": "/Navid079@github.io/Portfolio/static/js/main.5f6c8afa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b89cdb86.css",
+    "static/js/main.5f6c8afa.js"
+  ]
+}
