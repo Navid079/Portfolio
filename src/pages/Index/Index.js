@@ -3,11 +3,14 @@ import './Index.css';
 import React from 'react';
 import Hero from '../../page-sections/Index/Hero';
 import Biography from '../../page-sections/Index/Biography';
+import Splitter from '../../components/UI/Splitter/Splitter';
+import Card from '../../components/UI/Card/Card';
 
 const Index = () => {
   return (
     <div className='index-page'>
       <Hero />
+      <Splitter />
       <Biography title='Who am I?'>
         My name is Ahmad Navid Asghari and I'm a 21-year-old web developer.{' '}
         <br />
@@ -34,6 +37,9 @@ const Index = () => {
         start-up project that is currently under development and has not been
         published.
       </Biography>
+      <Splitter />
+      <Card></Card>
+      <Card type='prompt'></Card>
     </div>
   );
 };

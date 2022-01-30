@@ -1,0 +1,14 @@
+.splitter {
+  width: 100%;
+  height: 5px;
+  background-image: linear-gradient(
+    to right,
+    var(--clr-secondary-2),
+    var(--clr-secondary-5),
+    var(--clr-secondary-7),
+    var(--clr-secondary-5),
+    var(--clr-secondary-7),
+    var(--clr-secondary-5),
+    var(--clr-secondary-2)
+  );
+}

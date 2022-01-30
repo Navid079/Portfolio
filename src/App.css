@@ -35,6 +35,9 @@
   --clr-white: #fff0f3;
   --clr-black: #001219;
 
+  --clr-accept: #4aa022;
+  --clr-reject: #ff0000;
+
   --neumorphism-5: 5px 5px 15px #8ba7cf, -5px -5px 15px #bbe1ff;
   --neumorphism-inset-5: inset 5px 5px 15px #8ba7cf, inset -5px -5px 15px #bbe1ff;
 }

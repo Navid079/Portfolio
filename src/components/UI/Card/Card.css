@@ -1,0 +1,37 @@
+.card {
+  background-color: var(--clr-primary-5);
+  width: 30%;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.card__image-container {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  height: 20rem;
+}
+
+.card__body {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  padding-bottom: 1rem;
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.card__button {
+  width: 40%;
+}
+
+.card__button--accept {
+  color: var(--clr-accept);
+}
+
+.card__button--reject {
+  color: var(--clr-reject);
+}
