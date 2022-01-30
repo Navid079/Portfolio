@@ -31,8 +31,8 @@
 
 .hero__greeting {
   color: var(--clr-secondary-6);
-  text-shadow: 2px 2px 5px var(--clr-white),
-              -3px -3px 5px var(--clr-black);
+  text-shadow: 3px 3px 5px var(--clr-black),
+              -2px -2px 5px var(--clr-white);
   font-size: 15rem;
   user-select: none;
 }

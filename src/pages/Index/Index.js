@@ -14,7 +14,7 @@ const Index = () => {
     <div className='index-page'>
       <Hero />
       <Splitter />
-      <Biography title='Who am I?'>
+      <Biography title='Who am I?' imageUrl={require('../../images/avatar.jpg')}>
         My name is Ahmad Navid Asghari and I'm a 21-year-old web developer.{' '}
         <br />
         I am a bachelor's degree student in software engineering at the Persian
@@ -25,7 +25,7 @@ const Index = () => {
         My main skill is web programming and I can work as a full stack
         developer but I also know Java, Python, C and R programming.
       </Biography>
-      <Biography title='School Time'>
+      <Biography title='School Time' imageUrl={require('../../images/school.jpg')}>
         I studied at Ehsan Elementary School in Shiraz, Iran, and then continued
         my education at Sahib Al-Zaman School. In 2016, I was admitted to Razi
         Public Exemplary High School and received my diploma in Mathematics and
@@ -33,7 +33,7 @@ const Index = () => {
         computer engineering by passing the 2009 national entrance exam in
         mathematics and physics. I am currently studying at this university.
       </Biography>
-      <Biography title='My Work Experience'>
+      <Biography title='My Work Experience' imageUrl={require('../../images/experience.jpg')}>
         I've never been hired by any company, but by the end of 2020 I started
         doing small and large personal web projects. In the fall of 2021, with a
         number of students at the Persian Gulf University, we launched a

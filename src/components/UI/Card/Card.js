@@ -34,7 +34,7 @@ const Card = ({ className, imageUrl, type, title, children, ...props }) => {
   return (
     <div className={`card ${className || ''}`}>
       <div className='card__image-container'>
-        <img src={imageUrl} />
+        <img className='card__image' src={imageUrl} />
       </div>
       <div className='card__body'>
         <div className='card__description'>

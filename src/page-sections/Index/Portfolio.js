@@ -58,7 +58,8 @@ const Portfolio = () => {
         title='Project A'
         type='external'
         buttons={[seeMoreButton1]}
-      >
+        imageUrl={require('../../images/project.jpg')}
+        >
         Project A is a project that is going to do something in some way to
         achieve some goal. This project is written by me with some technologies.
       </Card>
@@ -67,7 +68,8 @@ const Portfolio = () => {
         title='Project B'
         type='external'
         buttons={[seeMoreButton2]}
-      >
+        imageUrl={require('../../images/project.jpg')}
+        >
         Project B is a project that is going to do something in some way to
         achieve some goal. This project is written by me with some technologies.
       </Card>
@@ -76,6 +78,7 @@ const Portfolio = () => {
         title='Project C'
         type='external'
         buttons={[seeMoreButton3]}
+        imageUrl={require('../../images/project.jpg')}
       >
         Project C is a project that is going to do something in some way to
         achieve some goal. This project is written by me with some technologies.
