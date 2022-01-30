@@ -20,6 +20,11 @@
   width: 78vw;
   height: 20vw;
   margin: 1vw;
+  transition: all 100ms linear;
+}
+
+.biography:hover .biography__body {
+  margin: 0;
 }
 
 .biography__title {
