@@ -6,6 +6,7 @@ import Biography from '../../page-sections/Index/Biography';
 import Splitter from '../../components/UI/Splitter/Splitter';
 import Card from '../../components/UI/Card/Card';
 import Button from '../../components/UI/Buttons/Button';
+import Portfolio from '../../page-sections/Index/Portfolio';
 
 const Index = () => {
   return (
@@ -39,13 +40,7 @@ const Index = () => {
         published.
       </Biography>
       <Splitter />
-      <Card></Card>
-      <Card type='prompt'></Card>
-      <Card type='custom' buttons={['btn1', 'btn2']}></Card>
-      <Card
-        type='external'
-        buttons={[<Button>one</Button>, <Button>two</Button>]}
-      ></Card>
+      <Portfolio />
     </div>
   );
 };

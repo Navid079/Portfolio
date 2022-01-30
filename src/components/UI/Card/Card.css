@@ -12,9 +12,26 @@
 }
 
 .card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 0.75rem;
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
   padding-bottom: 1rem;
+}
+
+.card__title {
+  font-size: 4rem;
+  color: var(--clr-secondary-7);
+}
+
+.card__text {
+  font-size: 1.5rem;
+  color: var(--clr-black);
+  margin-bottom: 1rem;
 }
 
 .card__buttons {

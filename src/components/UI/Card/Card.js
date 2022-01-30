@@ -3,7 +3,7 @@ import Button from '../Buttons/Button';
 
 import './Card.css';
 
-const Card = ({ className, imageUrl, type, ...props }) => {
+const Card = ({ className, imageUrl, type, title, children, ...props }) => {
   let buttons = [];
 
   switch (type) {
@@ -37,7 +37,8 @@ const Card = ({ className, imageUrl, type, ...props }) => {
         <img src={imageUrl} />
       </div>
       <div className='card__body'>
-        <div className='card__text'></div>
+        <h3 className='card__title'>{title}</h3>
+        <div className='card__text'>{children}</div>
         <div className='card__buttons'>{buttons}</div>
       </div>
     </div>
