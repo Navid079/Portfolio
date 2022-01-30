@@ -1,0 +1,38 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--clr-primary-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero__navigate {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__name {
+  color: var(--clr-primary-9);
+  user-select: none;
+}
+
+.hero__navigate-buttons {
+  display: flex;
+}
+
+.hero__greeting {
+  color: var(--clr-secondary-6);
+  text-shadow: 2px 2px 5px var(--clr-white),
+              -3px -3px 5px var(--clr-black);
+  font-size: 15rem;
+  user-select: none;
+}

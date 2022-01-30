@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dongle', sans-serif;
+  font-weight: 300;
+  border: none;
+  outline: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+:root {
+  --clr-primary-10: #012a4a;
+  --clr-primary-9: #013a63;
+  --clr-primary-8: #01497c;
+  --clr-primary-7: #014f86;
+  --clr-primary-6: #2a6f97;
+  --clr-primary-5: #a3c4f3;
+  --clr-primary-4: #90dbf4;
+  --clr-primary-3: #8eecf5;
+  --clr-primary-2: #98f5e1;
+  --clr-primary-1: #b9fbc0;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  --clr-secondary-10: #590d22;
+  --clr-secondary-9: #800f2f;
+  --clr-secondary-8: #a4133c;
+  --clr-secondary-7: #c9184a;
+  --clr-secondary-6: #ff4d6d;
+  --clr-secondary-5: #ff758f;
+  --clr-secondary-4: #ff8fa3;
+  --clr-secondary-3: #ffb3c1;
+  --clr-secondary-2: #ffccd5;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  --clr-white: #fff0f3;
+  --clr-black: #001219;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  --neumorphism-5: 5px 5px 15px #8ba7cf, -5px -5px 15px #bbe1ff;
+  --neumorphism-inset-5: inset 5px 5px 15px #8ba7cf, inset -5px -5px 15px #bbe1ff;
 }
