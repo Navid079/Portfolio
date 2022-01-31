@@ -38,6 +38,8 @@ const Footer = () => {
       case contactButton.current:
         navigator('/contact-me');
         break;
+      default:
+        break;
     }
   };
 

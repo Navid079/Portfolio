@@ -4,10 +4,10 @@ import Card from '../components/UI/Card/Card';
 import './Portfolio.css';
 
 const Portfolio = ({ projects }) => {
-  let cardRefs;
+  let cardRefs = useRef();
 
   const cardClickHandler = event => {
-    for (const ref of cardRefs) {
+    for (const ref of cardRefs.current) {
       if (ref.element === event.currentTarget) {
         console.log(ref.title);
       }
@@ -30,10 +30,10 @@ const Portfolio = ({ projects }) => {
   });
 
   useEffect(() => {
-    cardRefs = projects.map(project => {
+    cardRefs.current = projects.map(project => {
       return { element: project.reference.current, title: project.title };
     });
-  });
+  }, [cardRefs, projects]);
 
   return <div className='portfolio'>{cards}</div>;
 };

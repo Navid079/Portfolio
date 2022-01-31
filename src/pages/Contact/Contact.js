@@ -53,10 +53,10 @@ const Contact = () => {
               <FaEnvelope />
               <p className='contact__link'>navid.asg079@gmail.com</p>
             </a>
-            <a className='contact__item'>
+            <p className='contact__item'>
               <FaPhoneAlt />
               <p className='contact__link'>+989334303452</p>
-            </a>
+            </p>
           </div>
         </div>
       </div>

@@ -15,8 +15,8 @@ const Hero = ({ title }) => {
 
   const navigator = path => {
     if (window.location.pathname === path) return;
-    navigate(path)
-  }
+    navigate(path);
+  };
 
   const navigateHandler = event => {
     switch (event.target) {
@@ -31,6 +31,8 @@ const Hero = ({ title }) => {
         break;
       case contactButton.current:
         navigator('/contact-me');
+        break;
+      default:
         break;
     }
   };
