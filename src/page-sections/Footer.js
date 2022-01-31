@@ -6,7 +6,7 @@ import {
   FaGithubSquare,
   FaEnvelope,
 } from 'react-icons/fa';
-import Button from '../../components/UI/Buttons/Button'
+import Button from '../components/UI/Buttons/Button'
 
 
 import './Footer.css';

@@ -1,11 +1,11 @@
 import './Index.css';
 
 import React from 'react';
-import Hero from '../../page-sections/Index/Hero';
-import Biography from '../../page-sections/Index/Biography';
+import Hero from '../../page-sections/Hero';
+import Biography from '../../page-sections/Biography';
 import Splitter from '../../components/UI/Splitter/Splitter';
-import Portfolio from '../../page-sections/Index/Portfolio';
-import Footer from '../../page-sections/Index/Footer';
+import Portfolio from '../../page-sections/Portfolio';
+import Footer from '../../page-sections/Footer';
 
 const Index = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Card from '../../components/UI/Card/Card';
+import Card from '../components/UI/Card/Card';
 
 import './Portfolio.css';
 
@@ -29,7 +29,7 @@ const Portfolio = () => {
       <Card
         className='portfolio__card'
         title='Project A'
-        imageUrl={require('../../images/project.jpg')}
+        imageUrl={require('../images/project.jpg')}
         reference={card1}
         onClick={cardClickHandler}
       >
@@ -39,7 +39,7 @@ const Portfolio = () => {
       <Card
         className='portfolio__card'
         title='Project B'
-        imageUrl={require('../../images/project.jpg')}
+        imageUrl={require('../images/project.jpg')}
         reference={card2}
         onClick={cardClickHandler}
       >
@@ -49,7 +49,7 @@ const Portfolio = () => {
       <Card
         className='portfolio__card'
         title='Project C'
-        imageUrl={require('../../images/project.jpg')}
+        imageUrl={require('../images/project.jpg')}
         reference={card3}
         onClick={cardClickHandler}
       >
