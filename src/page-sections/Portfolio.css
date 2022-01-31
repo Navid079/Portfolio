@@ -1,9 +1,13 @@
 .portfolio {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   background-color: var(--clr-secondary-5);
 }
 
 .portfolio__card {
+  flex-shrink: 0;
+  width: 30%;
   background-color: var(--clr-secondary-5);
   box-shadow: var(--neumorphism-secondary-5);
 }
