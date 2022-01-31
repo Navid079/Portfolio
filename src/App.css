@@ -44,7 +44,8 @@
     inset -5px -5px 15px #8787bb;
 
   --neumorphism-3: 5px 5px 15px #808ec5, -5px -5px 15px #aec0ff;
-  --neumorphism-inset-3: inset 5px 5px 15px #808ec5, inset -5px -5px 15px #aec0ff;
+  --neumorphism-inset-3: inset 5px 5px 15px #808ec5,
+    inset -5px -5px 15px #aec0ff;
 
   --neumorphism-secondary-5: 5px 5px 15px #3a52b5, -5px -5px 15px #4e70f5;
   --neumorphism-secondary-inset-5: inset 5px 5px 15px #3a52b5,
