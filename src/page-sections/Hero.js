@@ -5,23 +5,32 @@ import Button from '../components/UI/Buttons/Button';
 
 import './Hero.css';
 
-const Hero = () => {
+const Hero = ({ title }) => {
+  const homeButton = useRef();
   const aboutButton = useRef();
   const projectsButton = useRef();
   const contactButton = useRef();
 
   const navigate = useNavigate();
 
+  const navigator = path => {
+    if (window.location.pathname === path) return;
+    navigate(path)
+  }
+
   const navigateHandler = event => {
     switch (event.target) {
+      case homeButton.current:
+        navigator('/');
+        break;
       case aboutButton.current:
-        navigate('/about-me');
+        navigator('/about-me');
         break;
       case projectsButton.current:
-        navigate('/my-projects');
+        navigator('/my-projects');
         break;
       case contactButton.current:
-        navigate('/contact-me');
+        navigator('/contact-me');
         break;
     }
   };
@@ -31,7 +40,9 @@ const Hero = () => {
       <div className='hero__navigate'>
         <div className='hero__name'>Ahmad Navid Asghari</div>
         <div className='hero__navigate-buttons'>
-          <Button>Home</Button>
+          <Button onClick={navigateHandler} reference={homeButton}>
+            Home
+          </Button>
           <Button onClick={navigateHandler} reference={aboutButton}>
             About me
           </Button>
@@ -43,7 +54,7 @@ const Hero = () => {
           </Button>
         </div>
       </div>
-      <h1 className='hero__greeting'>Greetings!</h1>
+      <h1 className='hero__greeting'>{title}</h1>
     </div>
   );
 };

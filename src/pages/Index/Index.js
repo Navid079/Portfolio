@@ -10,7 +10,7 @@ import Footer from '../../page-sections/Footer';
 const Index = () => {
   return (
     <div className='index-page'>
-      <Hero />
+      <Hero title='Greetings!' />
       <Splitter />
       <Biography title='Who am I?' imageUrl={require('../../images/avatar.jpg')}>
         My name is Ahmad Navid Asghari and I'm a 21-year-old web developer.{' '}
