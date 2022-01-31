@@ -1,6 +1,8 @@
+import React from 'react'
+
 import { useLayoutEffect } from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   useLocation,
@@ -27,7 +29,7 @@ function App() {
       <Router>
         <Wrapper>
           <Routes>
-            <Route exact path='/' element={<Index />} />
+            <Route exact path='' element={<Index />} />
             <Route exact path='/about-me' element={<About />} />
             <Route exact path='/my-projects' element={<Projects />} />
             <Route exact path='/contact-me' element={<Contact />} />
