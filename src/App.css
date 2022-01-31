@@ -11,26 +11,27 @@
 }
 
 :root {
-  --clr-primary-10: #012a4a;
-  --clr-primary-9: #013a63;
-  --clr-primary-8: #01497c;
-  --clr-primary-7: #014f86;
-  --clr-primary-6: #2a6f97;
-  --clr-primary-5: #a3c4f3;
-  --clr-primary-4: #90dbf4;
-  --clr-primary-3: #8eecf5;
-  --clr-primary-2: #98f5e1;
-  --clr-primary-1: #b9fbc0;
+  --clr-primary-10: #0a0a0f;
+  --clr-primary-9: #1f1f2e;
+  --clr-primary-8: #33334c;
+  --clr-primary-7: #47476b;
+  --clr-primary-6: #5c5c8a;
+  --clr-primary-5: #7575a3;
+  --clr-primary-4: #9494b8;
+  --clr-primary-3: #b3b3cc;
+  --clr-primary-2: #d1d1e0;
+  --clr-primary-1: #f0f0f5;
 
-  --clr-secondary-10: #590d22;
-  --clr-secondary-9: #800f2f;
-  --clr-secondary-8: #a4133c;
-  --clr-secondary-7: #c9184a;
-  --clr-secondary-6: #ff4d6d;
-  --clr-secondary-5: #ff758f;
-  --clr-secondary-4: #ff8fa3;
-  --clr-secondary-3: #ffb3c1;
-  --clr-secondary-2: #ffccd5;
+  --clr-secondary-10: #050815;
+  --clr-secondary-9: #0e183e;
+  --clr-secondary-8: #172868;
+  --clr-secondary-7: #213792;
+  --clr-secondary-6: #2a47bb;
+  --clr-secondary-5: #4461d5;
+  --clr-secondary-4: #6d84de;
+  --clr-secondary-3: #97a7e8;
+  --clr-secondary-2: #c1caf1;
+  --clr-secondary-1: #eaedfa;
 
   --clr-white: #fff0f3;
   --clr-black: #001219;
@@ -38,11 +39,14 @@
   --clr-accept: #4aa022;
   --clr-reject: #ff0000;
 
-  --neumorphism-5: 5px 5px 15px #8ba7cf, -5px -5px 15px #bbe1ff;
-  --neumorphism-inset-5: inset 5px 5px 15px #8ba7cf,
-    inset -5px -5px 15px #bbe1ff;
+  --neumorphism-5: 5px 5px 15px #63638b, -5px -5px 15px #8787bb;
+  --neumorphism-inset-5: inset 5px 5px 15px #63638b,
+    inset -5px -5px 15px #8787bb;
 
-  --neumorphism-secondary-5: 5px 5px 15px #ab143f, -5px -5px 15px #e71c55;
-  --neumorphism-secondary-inset-5: inset 5px 5px 15px #ab143f,
-    inset -5px -5px 15px #e71c55;
+  --neumorphism-3: 5px 5px 15px #808ec5, -5px -5px 15px #aec0ff;
+  --neumorphism-inset-3: inset 5px 5px 15px #808ec5, inset -5px -5px 15px #aec0ff;
+
+  --neumorphism-secondary-5: 5px 5px 15px #3a52b5, -5px -5px 15px #4e70f5;
+  --neumorphism-secondary-inset-5: inset 5px 5px 15px #3a52b5,
+    inset -5px -5px 15px #4e70f5;
 }

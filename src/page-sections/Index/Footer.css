@@ -45,12 +45,12 @@
 }
 
 .footer__nav-button {
-  box-shadow: 5px 5px 15px #cf919c, -5px -5px 15px #ffd5e6;
+  box-shadow: var(--neumorphism-3);
   background-color: var(--clr-secondary-3);
   margin: 1rem;
 }
 
 .footer__nav-button:hover,
 .footer__nav-button:active {
-  box-shadow: inset 5px 5px 15px #cf919c, inset -5px -5px 15px #ffd5e6;
+  box-shadow: var(--neumorphism-inset-3);
 }

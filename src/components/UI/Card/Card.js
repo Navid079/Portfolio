@@ -3,12 +3,23 @@ import Button from '../Buttons/Button';
 
 import './Card.css';
 
-const Card = ({ className, imageUrl, type, title, children, ...props }) => {
+const Card = ({
+  className,
+  imageUrl,
+  type,
+  title,
+  children,
+  onClick,
+  reference,
+  ...props
+}) => {
   let buttons = [];
 
   switch (type) {
-    case 'notify':
+    case 'none':
     default:
+      break;
+    case 'notify':
       buttons.push(<Button className='card__button'>Ok</Button>);
       break;
     case 'prompt':
@@ -32,7 +43,7 @@ const Card = ({ className, imageUrl, type, title, children, ...props }) => {
   }
 
   return (
-    <div className={`card ${className || ''}`}>
+    <div className={`card ${className || ''}`} onClick={onClick} ref={reference} >
       <div className='card__image-container'>
         <img className='card__image' src={imageUrl} alt='card' />
       </div>

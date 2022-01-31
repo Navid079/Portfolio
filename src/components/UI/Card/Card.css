@@ -5,6 +5,7 @@
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .card__image-container {

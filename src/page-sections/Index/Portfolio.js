@@ -1,23 +1,22 @@
 import React, { useRef } from 'react';
-import Button from '../../components/UI/Buttons/Button';
 import Card from '../../components/UI/Card/Card';
 
 import './Portfolio.css';
 
 const Portfolio = () => {
-  const project1 = useRef();
-  const project2 = useRef();
-  const project3 = useRef();
+  const card1 = useRef();
+  const card2 = useRef();
+  const card3 = useRef();
 
-  const seeMoreHandler = event => {
-    switch (event.target) {
-      case project1.current:
+  const cardClickHandler = event => {
+    switch (event.currentTarget) {
+      case card1.current:
         console.log('one');
         break;
-      case project2.current:
+      case card2.current:
         console.log('two');
         break;
-      case project3.current:
+      case card3.current:
         console.log('three');
         break;
       default:
@@ -25,42 +24,14 @@ const Portfolio = () => {
     }
   };
 
-  const seeMoreButton1 = (
-    <Button
-      className='portfolio__button'
-      onClick={seeMoreHandler}
-      reference={project1}
-    >
-      See more
-    </Button>
-  );
-  const seeMoreButton2 = (
-    <Button
-      className='portfolio__button'
-      onClick={seeMoreHandler}
-      reference={project2}
-    >
-      See more
-    </Button>
-  );
-  const seeMoreButton3 = (
-    <Button
-      className='portfolio__button'
-      onClick={seeMoreHandler}
-      reference={project3}
-    >
-      See more
-    </Button>
-  );
-
   return (
     <div className='portfolio'>
       <Card
         className='portfolio__card'
         title='Project A'
-        type='external'
-        buttons={[seeMoreButton1]}
         imageUrl={require('../../images/project.jpg')}
+        reference={card1}
+        onClick={cardClickHandler}
       >
         Project A is a project that is going to do something in some way to
         achieve some goal. This project is written by me with some technologies.
@@ -68,9 +39,9 @@ const Portfolio = () => {
       <Card
         className='portfolio__card'
         title='Project B'
-        type='external'
-        buttons={[seeMoreButton2]}
         imageUrl={require('../../images/project.jpg')}
+        reference={card2}
+        onClick={cardClickHandler}
       >
         Project B is a project that is going to do something in some way to
         achieve some goal. This project is written by me with some technologies.
@@ -78,9 +49,9 @@ const Portfolio = () => {
       <Card
         className='portfolio__card'
         title='Project C'
-        type='external'
-        buttons={[seeMoreButton3]}
         imageUrl={require('../../images/project.jpg')}
+        reference={card3}
+        onClick={cardClickHandler}
       >
         Project C is a project that is going to do something in some way to
         achieve some goal. This project is written by me with some technologies.
